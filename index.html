@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>WEATHER APP</h1>
+    <div id="card">
+      <form onsubmit="showData(event)">
+        <input id="countryInput" name="country" placeholder="Busca un país" oninput="handleChange()" />
+        <button id="search">Buscar</button>
+      </form>
+      <p id="error"></p>
+      <div id="countryCard">
+        <h2 id="countryName"></h2>
+        <img id="countryImageWeather" src=""></img>
+        <div class="layout">
+          <div class="info">
+            <p>Temperature: <span id="countryTemp"></span>°</p>
+            <p>Speed: <span id="countrySpeed"></span> km/h</p>
+          </div>
+          <div class="info">
+            <p>Humidity: <span id="countryHumidity"></span>%</p>
+            <p>Deg: <span id="countryDeg"></span>%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
